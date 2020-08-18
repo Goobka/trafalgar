@@ -123,17 +123,63 @@ a {
   font-size: 36px;
   line-height: 1.33;
 }
-
+.autor {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 2.19;
+}
+.responses .subtitle {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 2.67;
+}
+.responses .text {
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 1.58;
+}
 /* Articles */
 .articles a {
   color: var(--secondary-accent-color);
 }
-
+.articles .section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.56;
+}
+.desc .subtitle {
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 1.52;
+}
+.desc .excerpt {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.75;
+}
 /* Footer */
 footer {
   color: var(--secondary-text-color);
   background: linear-gradient(183.41deg, #67c3f3 -8.57%, #5a98f2 82.96%);
 }
+.tagline {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 1.56;
+}
+.copyright {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.75;
+}
+.external-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 3;
+}
 .external a {
   color: var(--secondary-text-color);
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 2.11;
 }
