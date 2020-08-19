@@ -57,6 +57,7 @@ a {
 }
 .site-nav .current {
   color: var(--nav-text-color);
+  font-weight: 700;
   opacity: 1;
 }
 
@@ -84,7 +85,6 @@ a {
   font-weight: 300;
   font-size: 18px;
   line-height: 1.67;
-  text-align: center;
 }
 .subtitle {
   font-weight: 700;
@@ -129,11 +129,13 @@ a {
   line-height: 2.19;
 }
 .responses .subtitle {
+  color: rgba(255, 255, 255, 0.85);
   font-weight: 400;
   font-size: 18px;
   line-height: 2.67;
 }
 .responses .text {
+  color: rgba(255, 255, 255, 0.9);
   font-weight: 400;
   font-size: 19px;
   line-height: 1.58;
@@ -141,6 +143,9 @@ a {
 /* Articles */
 .articles a {
   color: var(--secondary-accent-color);
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 1.65;
 }
 .articles .section-title {
   font-weight: 700;
