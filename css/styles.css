@@ -8,12 +8,43 @@
   --primary-bg-color: #ffffff;
   --logo-text-color: #233348;
 }
-
+@font-face {
+  font-family: "Muli";
+  src: url("../fonts/Muli-Regular.ttf") format("ttf");
+  src: url("../fonts/Muli-Regular.woff") format("woff");
+  src: url("../fonts/Muli-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Muli";
+  src: url("../fonts/Muli-Light.ttf") format("ttf");
+  src: url("../fonts/Muli-Light.woff") format("woff");
+  src: url("../fonts/Muli-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Muli";
+  src: url("../fonts/Muli-SemiBold.ttf") format("ttf");
+  src: url("../fonts/Muli-SemiBold.woff") format("woff");
+  src: url("../fonts/Muli-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Muli";
+  src: url("../fonts/Muli-Bold.ttf") format("ttf");
+  src: url("../fonts/Muli-Bold.woff") format("woff");
+  src: url("../fonts/Muli-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
 /* Body */
 body {
   color: var(--primary-text-color);
   background-color: var(--primary-bg-color);
-  font-family: Mulish, sans-serif;
+  font-family: "Muli", sans-serif;
 }
 
 .list {
