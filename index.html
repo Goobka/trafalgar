@@ -9,22 +9,22 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.7.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./sass/main.css" />
   </head>
   <body>
     <header class="header">
       <!-- Navigation -->
-      <div class="header__container">
+      <div class="header__container container">
         <a class="logo" href="#">
           <img src="./images/mainlogo.svg" alt="" />
         </a>
         <nav class="nav">
           <ul class="nav__list list">
-            <li><a href="" class="nav__link nav__link--current link">Home</a></li>
-            <li><a href="" class="nav__link link">Find a doctor</a></li>
-            <li><a href="" class="nav__link link">Apps</a></li>
-            <li><a href="" class="nav__link link">Testimonials</a></li>
-            <li><a href="" class="nav__link link">About us</a></li>
+            <li class="nav__item"><a href="" class="nav__link nav__link--current link">Home</a></li>
+            <li class="nav__item"><a href="" class="nav__link link">Find a doctor</a></li>
+            <li class="nav__item"><a href="" class="nav__link link">Apps</a></li>
+            <li class="nav__item"><a href="" class="nav__link link">Testimonials</a></li>
+            <li class="nav__item"><a href="" class="nav__link link">About us</a></li>
           </ul>
         </nav>
       </div>
@@ -33,21 +33,23 @@
       <!-- Hero -->
       <section class="hero">
         <div class="hero__container container">
-          <h1 class="hero__title title">
-            Virtual healthcare <br />
-            for you
-          </h1>
-          <p class="hero__text">
-            Trafalgar provides progressive, and affordable healthcare, accessible
-            on mobile and online for everyone
-          </p>
-          <button type="button" class="hero__button button">Consult today</button>
+          <div class="hero__content">
+            <h1 class="hero__title title">
+              Virtual healthcare <br />
+              for you
+            </h1>
+            <p class="hero__text">
+              Trafalgar provides progressive, and affordable healthcare, accessible
+              on mobile and online for everyone
+            </p>
+            <button type="button" class="hero__button button">Consult today</button>
+          </div>
           <img class="hero__img" src="./images/hero.jpg" alt="" />
         </div>
       </section>
       <!-- Our Services -->
       <section class="services section">
-        <div class="services__container">
+        <div class="services__container container">
           <h2 class="services__title title">Our services</h2>
           <p class="services__text">
             We provide to you the best choiches for you. Adjust it to your health
@@ -56,7 +58,7 @@
             your health
           </p>
           <ul class="services__list list">
-            <li>
+            <li class="services__item">
               <img src="./images/search.svg" alt="" />
               <h3 class="services__subtitle subtitle">Search doctor</h3>
               <p class="services__desc">
@@ -64,79 +66,83 @@
                 trusted hospitals
               </p>
             </li>
-            <li>
-              <img src="./images/pharmacy.svg" alt="" />
+            <li class="services__item">
+              <img src="./images/pharmacy.svg" alt="" height="90px"/>
               <h3 class="services__subtitle subtitle">Online pharmacy</h3>
               <p class="services__desc">
                 Buy your medicines with our mobile application with a simple
                 delivery system
               </p>
             </li>
-            <li>
-              <img src="./images/consultation.svg" alt="" />
+            <li class="services__item">
+              <img src="./images/consultation.svg" alt="" height="90px" />
               <h3 class="services__subtitle subtitle">Consultation</h3>
               <p class="services__desc">
                 Free consultation with our trusted doctors and get the best
                 recomendations
               </p>
             </li>
-            <li>
-              <img src="./images/details.svg" alt="" />
+            <li class="services__item">
+              <img src="./images/details.svg" alt="" height="90px" />
               <h3 class="services__subtitle subtitle">Details info</h3>
               <p class="services__desc">
                 Free consultation with our trusted doctors and get the best
                 recomendations
               </p>
             </li>
-            <li>
-              <img src="./images/emergency.svg" alt="" />
+            <li class="services__item">
+              <img src="./images/emergency.svg" alt="" height="90px" />
               <h3 class="services__subtitle subtitle">Emergency care</h3>
               <p class="services__desc">
                 You can get 24/7 urgent care for yourself or your children and
                 your lovely family
               </p>
             </li>
-            <li>
-              <img src="./images/tracking.svg" alt="" />
+            <li class="services__item">
+              <img src="./images/tracking.svg" alt="" height="90px" />
               <h3 class="services__subtitle subtitle">Tracking</h3>
               <p class="services__desc">
                 Track and save your medical history and health data
               </p>
             </li>
           </ul>
-          <a href="" class="services__button button">Learn more</a>
+          <button type="button" class="services__button button">Learn more</button>
         </div>
       </section>
       <!-- Our apps -->
-      <section class="apps section">
-        <div class="apps__container container">
-          <h2 class="apps__title title">Our apps</h2>
-          <ul class="apps__list list">
-            <li class="apps__item">
+      <section class="activity section">
+        <div class="activity__container container">
+          <h2 class="activity__title title visually-hidden">Our activities</h2>
+          <ul class="activity__list list">
+            <li class="activity__item">
               <img src="./images/providers.jpg" alt="" />
-              <h3 class="apps__subtitle subtitle">
-                Leading healthcare <br />
-                providers
-              </h3>
-              <p class="apps__text">
-                Trafalgar provides progressive, and affordable healthcare,
-                accessible on mobile and online for everyone. To us, it’s not just
-                work. We take pride in the solutions we deliver
-              </p>
-              <a href="#" class="apps__button button">Learn more</a>
+              <div class="activity__content">
+                <h3 class="activity__subtitle subtitle">
+                  Leading healthcare <br />
+                  providers
+                </h3>
+                <p class="activity__text">
+                  Trafalgar provides progressive, and affordable healthcare,
+                  accessible on mobile and online for everyone. To us, it’s not just
+                  work. We take pride in the solutions we deliver
+                </p>
+                <button type="button" class="activity__button button">Learn more</button>
+              </div>
             </li>
-            <li class="apps__item">
+            <li class="activity__item">
               <img src="./images/mobile.jpg" alt="" />
-              <h3 class="apps__subtitle subtitle">
-                Download our <br />
-                mobile apps
-              </h3>
-              <p class="apps__text">
-                Our dedicated patient engagement app and web portal allow you to
-                access information instantaneously (no tedeous form, long calls,
-                or administrative hassle) and securely
-              </p>
-              <a href="#" class="apps__button button">Download</a>
+              <div class="activity__content activity__content--reverse">
+                <h3 class="activity__subtitle subtitle">
+                  Download our <br />
+                  mobile apps
+                </h3>
+                <p class="activity__text">
+                  Our dedicated patient engagement app and web portal allow you to
+                  access information instantaneously (no tedeous form, long calls,
+                  or administrative hassle) and securely
+                </p>
+                <button type="button" class="activity__button button">Download</button>
+              </div>
             </li>
           </ul>
         </div>
@@ -147,9 +153,11 @@
           <h2 class="responses__title title">What our customer are saying</h2>
           <ul class="responses__list list">
             <li class="responses__item">
-              <img src="./images/edvard.jpg" alt="Photo of Edvard" />
-              <h3 class="responses__autor">Edward Newgate</h3>
-              <p class="responses__subtitle subtitle">Founder Circle</p>
+              <img class="responses__img" src="./images/edvard.jpg" alt="Photo of Edvard" />
+              <div class="responses__info">
+                <h3 class="responses__autor">Edward Newgate</h3>
+                <p class="responses__subtitle subtitle">Founder Circle</p>
+              </div>
               <p class="responses__text">
                 &#34;Our dedicated patient engagement app and web portal allow you
                 to access information instantaneously (no tedeous form, long
@@ -165,40 +173,46 @@
           <h2 class="articles__title title">Check out our latest article</h2>
           <ul class="articles__list list">
             <li class="articles__item">
-              <img src="./images/disease.jpg" alt="" />
-              <h3 class="articles__subtitle subtitle">
-                Disease detection, check <br />
-                up in the laboratory
-              </h3>
-              <p class="articles__text">
-                In this case, the role of the health laboratory is very important
-                to do a disease detection...
-              </p>
-              <a href="#" class="articles__link">Read more</a>
+              <img class="articles__img" src="./images/disease.jpg" alt="" />
+              <div class="articles__content">
+                <h3 class="articles__subtitle subtitle">
+                  Disease detection, check <br />
+                  up in the laboratory
+                </h3>
+                <p class="articles__text">
+                  In this case, the role of the health laboratory is very important
+                  to do a disease detection...
+                </p>
+                <a href="#" class="articles__link">Read more</a>
+              </div>
             </li>
             <li class="articles__item">
-              <img src="./images/herbal.jpg" alt="" />
-              <h3 class="articles__subtitle subtitle">
-                Herbal medicines that are <br />
-                safe for consumption
-              </h3>
-              <p class="articles__text">
-                Herbal medicine is very widely used at this time because of its
-                very good for your health...
-              </p>
-              <a href="#" class="articles__link">Read more</a>
+              <img class="articles__img" src="./images/herbal.jpg" alt="" />
+              <div class="articles__content">
+                <h3 class="articles__subtitle subtitle">
+                  Herbal medicines that are <br />
+                  safe for consumption
+                </h3>
+                <p class="articles__text">
+                  Herbal medicine is very widely used at this time because of its
+                  very good for your health...
+                </p>
+                <a href="#" class="articles__link">Read more</a>
+              </div>
             </li>
             <li class="articles__item">
-              <img src="./images/care.jpg" alt="" />
-              <h3 class="articles__subtitle subtitle">
-                Natural care for healthy <br />
-                facial skin
-              </h3>
-              <p class="articles__text">
-                A healthy lifestyle should start from now and also for your skin
-                health. There are some...
-              </p>
-              <a href="#" class="articles__link">Read more</a>
+              <img class="articles__img" src="./images/care.jpg" alt="" />
+              <div class="articles__content">
+                <h3 class="articles__subtitle subtitle">
+                  Natural care for healthy <br />
+                  facial skin
+                </h3>
+                <p class="articles__text">
+                  A healthy lifestyle should start from now and also for your skin
+                  health. There are some...
+                </p>
+                <a href="#" class="articles__link">Read more</a>
+              </div>
             </li>
           </ul>
           <button type="button" class="articles__button button">View all</button>
@@ -208,41 +222,50 @@
     <!-- Footer -->
     <footer>
       <div class="footer__container container">
-        <a href="#" class="logo">
-          <img src="./images/logo.svg" alt="" />
-        </a>
-        <p class="tagline">
-          Trafalgar provides progressive, and affordable <br />
-          healthcare, accessible on mobile and online <br />
-          for everyone
-        </p>
-        <p class="copyright">&#169;Trafalgar PTY LTD 2020. All rights reserved</p>
+        <div class="footer__info">
+          <a href="#" class="logo">
+            <img src="./images/logo.svg" alt="" />
+          </a>
+          <p class="tagline">
+            Trafalgar provides progressive, and affordable <br />
+            healthcare, accessible on mobile and online <br />
+            for everyone
+          </p>
+          <p class="copyright">&#169;Trafalgar PTY LTD 2020. All rights reserved</p>
+        </div>
         
         <div class="external">
-          <h2 class="external__title title">External links</h2>
-        
-          <h3 class="external__subtitle">Company</h3>
-          <ul class="external__list">
-            <li class="external__item"><a href="#" class="external__link">About</a></li>
-            <li class="external__item"><a href="#" class="external__link">Testimonials</a></li>
-            <li class="external__item"><a href="#" class="external__link">Find a doctor</a></li>
-            <li class="external__item"><a href="#" class="external__link">Apps</a></li>
-          </ul>
-        
-          <h3 class="external__subtitle subtitle">Region</h3>
+          <h2 class="external__title title visually-hidden">External links</h2>
           <ul class="external__list list">
-            <li class="external__item"><a href="#" class="external__link">Indonesia</a></li>
-            <li class="external__item"><a href="#" class="external__link">Singapore</a></li>
-            <li class="external__item"><a href="#" class="external__link">Hongkong</a></li>
-            <li class="external__item"><a href="#" class="external__link">Canada</a></li>
-          </ul>
-        
-          <h3 class="external__subtitle subtitle">Help</h3>
-          <ul class="external__list list">
-            <li class="external__item"><a href="#" class="external__link">Help center</a></li>
-            <li class="external__item"><a href="#" class="external__link">Contact support</a></li>
-            <li class="external__item"><a href="#" class="external__link">Instructions</a></li>
-            <li class="external__item"><a href="#" class="external__link">How it works</a></li>
+            <li class="external__item">
+              <h3 class="external__subtitle">Company</h3>
+              <ul class="external__sublist list">
+                <li class="external__subitem"><a href="#" class="external__link">About</a></li>
+                <li class="external__subitem"><a href="#" class="external__link">Testimonials</a></li>
+                <li class="external__subitem"><a href="#" class="external__link">Find a doctor</a></li>
+                <li class="external__subitem"><a href="#" class="external__link">Apps</a></li>
+              </ul>
+            </li>
+            
+           <li class="external__item">
+              <h3 class="external__subtitle subtitle">Region</h3>
+              <ul class="external__sublist list">
+                <li class="external__subitem"><a href="#" class="external__link">Indonesia</a></li>
+                <li class="external__subitem"><a href="#" class="external__link">Singapore</a></li>
+                <li class="external__subitem"><a href="#" class="external__link">Hongkong</a></li>
+                <li class="external__subitem"><a href="#" class="external__link">Canada</a></li>
+              </ul>
+           </li>
+            
+            <li class="external__item">
+              <h3 class="external__subtitle subtitle">Help</h3>
+              <ul class="external__sublist list">
+                <li class="external__subitem"><a href="#" class="external__link">Help center</a></li>
+                <li class="external__subitem"><a href="#" class="external__link">Contact support</a></li>
+                <li class="external__subitem"><a href="#" class="external__link">Instructions</a></li>
+                <li class="external__subitem"><a href="#" class="external__link">How it works</a></li>
+              </ul>
+            </li>
           </ul>
         </div>
       </div>

@@ -1,0 +1,34 @@
+.activity__container {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.activity__item {
+  display: flex;
+  &:nth-child(2n) {
+    flex-direction: row-reverse;
+  }
+  &:not(:last-child) {
+    margin-bottom: 190px;
+  }
+}
+.activity__content {
+  align-items: center;
+  max-width: 450px;
+  padding: 30px 10px;
+  margin-left: 70px;
+  &--reverse {
+    margin: 0 70px 0 0;
+  }
+}
+.activity__subtitle {
+  margin: 0 0 60px 0;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.56;
+}
+.activity__text {
+  margin: 0 0 40px 0;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 1.67;
+}

@@ -1,11 +1,26 @@
-.hero-title {
-  color: var(--title-text-color);
+.hero__container {
+  display: flex;
+  justify-content: space-between;
+}
+.hero__content {
+  margin: 0;
+  padding-top: 130px;
+  padding-bottom: 130px;
+}
+.hero__title {
+  margin: 0 0 25px 0;
+  color: $title-text-color;
   font-weight: 700;
   font-size: 48px;
   line-height: 1.17;
 }
-.hero-text {
+.hero__text {
+  margin: 0 0 45px 0;
   font-weight: 300;
   font-size: 21px;
   line-height: 1.52;
+}
+.hero__button {
+  color: $secondary-text-color;
+  background-color: $accent-color;
 }

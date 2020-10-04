@@ -28,21 +28,26 @@ body {
 a {
   text-decoration: unset;
 }
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 .button {
+  padding: 2px 36px;
+  width: 200px;
   color: var(--accent-color);
   background-color: var(--primary-bg-color);
   font-weight: 700;
   font-size: 18px;
   line-height: 3.33;
+  border: 1.4px solid #458FF6;
+  border-radius: 55px;
 }
 
-.hero .button {
-  color: var(--secondary-text-color);
-  background-color: var(--accent-color);
-}
-.title {
-  color: var(--title-text-color);
-}
-.subtitle {
-  color: var(--title-text-color);
-}
+

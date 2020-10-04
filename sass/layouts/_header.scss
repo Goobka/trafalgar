@@ -1,13 +1,24 @@
 .header__container {
+  display: flex;
+  justify-content: space-between;
   padding-top: 30px;
   padding-bottom: 30px;
+}
+.logo {
+  display: inline-block;
 }
 .nav {
   display: flex;
   align-items: center;
 }
+.nav__item {
+  display: inline-block;
+  &:not(:last-child) {
+    margin-right: 40px;
+  }
+}
 .nav__link {
-  color: var(--nav-text-color);
+  color: $nav-text-color;
   opacity: 0.5;
   list-style: none;
   font-weight: 400;
@@ -16,11 +27,11 @@
 }
 .nav__link:hover,
 .nav__link:focus {
-  color: var(--nav-text-color);
+  color: $nav-text-color;
   opacity: 1;
 }
 .nav--current {
-  color: var(--nav-text-color);
+  color: $nav-text-color;
   font-weight: 700;
   opacity: 1;
 }

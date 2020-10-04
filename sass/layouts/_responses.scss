@@ -1,0 +1,47 @@
+.responses__container {
+  text-align: center;
+  padding: 64px 110px 80px 110px;
+  color: var(--secondary-text-color);
+  background: linear-gradient(208.18deg, #67c3f3 9.05%, #5a98f2 76.74%);
+  border-radius: 24px;
+}
+.responses__item {
+  display: flex;
+  align-items: center;
+}
+.responses__title {
+  margin: 0 0 100px 0;
+  color: rgba(255, 255, 255, 0.85);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.33;
+}
+.responses__img {
+  border-radius: 50%;
+}
+.responses__info {
+  text-align: start;
+  margin: 0 0 0 29px;
+}
+.responses__autor {
+  margin: 0;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 2.19;
+}
+.responses__subtitle {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.85);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 2.67;
+}
+.responses__text {
+  text-align: start;
+  max-width: 420px;
+  margin:  0 0 0 100px;
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 1.58;
+}
