@@ -1,0 +1,48 @@
+*,
+::before,
+::after {
+  outline: teal;
+}
+body {
+  color: var(--primary-text-color);
+  background-color: var(--primary-bg-color);
+  font-family: "Muli", sans-serif;
+}
+.container {
+  // width: 100%;
+  width: 1110px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0;
+}
+.img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+a {
+  text-decoration: unset;
+}
+.button {
+  color: var(--accent-color);
+  background-color: var(--primary-bg-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 3.33;
+}
+
+.hero .button {
+  color: var(--secondary-text-color);
+  background-color: var(--accent-color);
+}
+.title {
+  color: var(--title-text-color);
+}
+.subtitle {
+  color: var(--title-text-color);
+}
